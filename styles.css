@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+#datetime {
+    font-size: 1.5em;          /* Larger text for easy readability */
+    color: #ffffff;            /* White text */
+    text-align: center;        /* Center the text */
+    margin-top: 20px;          /* Space from the top */
+    margin-bottom: 40px;       /* Add space below the date-time box */
+    background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent background */
+    padding: 10px 20px;        /* Padding for better spacing inside the box */
+    border-radius: 10px;       /* Rounded corners */
+    display: inline-block;     /* Ensure the background wraps around text */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+h1 {
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Center the date and time container */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(100deg,  #575656, #062e3f);
+}
+/*body {
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    flex-direction: column;
+    min-height: 100vh;         
+    background: linear-gradient(100deg,  #575656, #062e3f); 
+}*/
+
+
+.container{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    padding: 40px 30px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;        /* Centers text within the container */
+}
+h3 {
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.todo-app{
+    width: 100%;
+    
+}
+
+/*.h1 {
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+}*/
+
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.todo-app h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px; 
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #000000;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #edeef0;
+}
